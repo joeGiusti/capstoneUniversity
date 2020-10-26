@@ -17,17 +17,24 @@
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
 
+html{
+    font-family: 'Oswald', sans-serif;
+}
 .center{
     text-align: center;
 }
 .topNavUpper{
-    height:50px;
+    height:55px;
     width:100%;
     margin: 0;
-    background-color: blue;
+    color: rgb(255, 188, 44);
     position: absolute;
     text-align: center;
-    color:#000;
+    background-color:#000;
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+    top:0;
 }
 .topNav{
     height:50px;
@@ -36,16 +43,19 @@
     background-color: rgba(2, 2, 2, 0.2);
     z-index: 100;
     display: block;
-    position: fixed;
+    position: absolute;
     text-align: center;
     margin-top: 50px;
 }
 .hoverButton{
     color: #fff;
     height: 50px;
-    width:100px;
+    width:150px;
     display: inline-block;
+    vertical-align:middle;
+    line-height:50px;
+
 }
 .hoverButton:hover{
-    background-color:rgba(9, 90, 90, 0.8);
+    background-color:rgba(10, 10, 10, 0.6);
 }

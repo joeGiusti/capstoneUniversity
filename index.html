@@ -8,24 +8,31 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Capstone.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body style="height:100%; margin:0; background-color:#555;">
     <div class="topNavUpper">
-        Capstone University
+      <img style="height:60px; display: inline-block;" src="TemplateData/torch3.jpg">
+      <div style="display: inline-block; bottom:0; vertical-align: top;">Capstone University</div>
     </div>
     <div class="topNav">
-      <div class="hoverButton">ACADEMICSs</div>
+      <div class="hoverButton">Academics</div>
       <div class="hoverButton">Research</div>
       <div class="hoverButton">Degree Plans</div>
       <div class="hoverButton">About</div>
     </div>
     <div class="webgl-content" style="height:100%; width:100%; margin-left:2%; margin-top:50px;">
       <div id="unityContainer" style="height: 85%; width: 96%; background-color:#000; margin:0px;"></div>
-        <div class="footer" style="width:95%;">
+        <div class="footer" style="width:95%; text-align: center;">
           <div class="webgl-logo"></div>
+          <div style="display:inline-block; line-height:25px; margin-left: 40px;margin-right: 40px;">Free Mouse: <img style="height:50px;" src="TemplateData/esc_key.jpg"> </div>                    
+          <div style="display:inline-block; line-height:25px; margin-left: 40px;margin-right: 40px;">Move: <img style="height:50px;" src="TemplateData/move_image.png"> </div>
+          <div style="display:inline-block; line-height:25px; margin-left: 40px;margin-right: 40px;">Perspective: <img style="height:50px;" src="TemplateData/keyboard_key_p.png"> </div>
+          
+          
           <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
           <div class="title">Capstone</div>
         </div>
